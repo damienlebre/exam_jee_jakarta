@@ -12,7 +12,7 @@ import org.mindrot.jbcrypt.BCrypt;
 import java.io.IOException;
 import java.util.List;
 
-@WebServlet(name ="loginServlet", urlPatterns ="/login")
+@WebServlet(name ="loginServlet", urlPatterns ="/secret-login")
 public class LoginServlet extends HttpServlet {
 
     private UserService userService;
