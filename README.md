@@ -2,7 +2,7 @@
 
 J'ai essayé de mettre un peu à profit mes insomnies, il manque des choses, notament l'upload de fichier, j'ai manqué
 de temps pour pouvoir me pencher dessus.
-J'ai clairement essayé de viser les points par rapport au barème mis en place, techniquement mise à part l'upload,
+J'ai clairement essayé de viser les points par rapport au barème mis en place. Techniquement mise à part l'upload,
 ça respecte le cahier des charges des consignes tels quelles sont formulées.
 C'est loin d'etre parfait, mes dates pour les annonces ont un format dégeu, le "design" reste basique, y a aucune vérif'
 des formulaires coté front et l'ux peu etre amélioré, mais c'est fonctionnel...
