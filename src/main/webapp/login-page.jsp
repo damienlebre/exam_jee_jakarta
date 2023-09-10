@@ -30,12 +30,12 @@
 
             <div class="form-group col-md-4">
                 <label for="username" class="form-label  mt-4">Username</label>
-                <input type="text" class="form-control" id="username" aria-describedby="usernameHelp" placeholder="username">
+                <input type="text" class="form-control" id="username" name="username" aria-describedby="usernameHelp" placeholder="username">
 <%--                <small id="usernameHelp" class="form-text text-muted">texte.</small>--%>
             </div>
             <div class="form-group col-md-4">
                 <label for="InputPassword" class="form-label mt-4">Password</label>
-                <input type="password" class="form-control" id="InputPassword" placeholder="Password" autocomplete="off">
+                <input type="password" class="form-control" id="InputPassword" name="password" placeholder="Password" autocomplete="off">
             </div>
 
             <button type="submit" class="btn btn-outline-primary my-5">Se connecter</button>
