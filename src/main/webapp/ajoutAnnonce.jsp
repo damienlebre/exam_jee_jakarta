@@ -24,7 +24,12 @@
   <%--      <h1>Ajouter une nouvelle  Plage : </h1>--%>
   <%--  </div>--%>
 
-  <form method="post" class="mt-5">
+    <c:if test="${sessionScope.user != null}">
+      <p>Bonjour ${user.username} :) !</p>
+      <a  href="${pageContext.request.contextPath}/logout-registeredUser">Se déconnecter</a>
+    </c:if>
+
+  <form method="post"  class="mt-5">
     <fieldset>
       <legend><h1>Ajouter une nouvelle  Annonce : </h1></legend>
 
@@ -45,6 +50,7 @@
         <div>
           <label for="imageAnnonce" class="form-label mt-4">Image de l'annonce : </label>
           <input type="text" name="image-annonce" placeholder="image pour votre annonce" class="form-control" id="imageAnnonce">
+<%--          <input type="file" name="image-annonce" id="imageAnnonce">--%>
         </div>
 
         <div>

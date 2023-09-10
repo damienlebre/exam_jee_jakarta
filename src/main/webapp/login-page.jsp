@@ -37,6 +37,11 @@
                 <label for="InputPassword" class="form-label mt-4">Password</label>
                 <input type="password" class="form-control" id="InputPassword" name="password" placeholder="Password" autocomplete="off">
             </div>
+            <c:if test="${error}">
+                <div id="validationServerUsernameFeedback" class="invalid-feedback">
+                    Invalid Credentials
+                </div>
+            </c:if>
 
             <button type="submit" class="btn btn-outline-primary my-5">Se connecter</button>
 

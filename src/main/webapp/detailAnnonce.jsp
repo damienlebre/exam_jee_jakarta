@@ -21,6 +21,10 @@
 
     <div class="title container my-5">
         <h1>Détail de l'annonce ${annonce.getTitre()} :</h1>
+        <c:if test="${sessionScope.user != null}">
+            <p>Bonjour ${user.username} :) !</p>
+            <a  href="${pageContext.request.contextPath}/logout-registeredUser">Se déconnecter</a>
+        </c:if>
     </div>
     <div class="d-flex justify-content-center">
         <div class="card col-lg-6 col-md-6 col-sm-6 col-xs-12">

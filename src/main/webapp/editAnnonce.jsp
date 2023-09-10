@@ -20,9 +20,10 @@
 
 <div class="container mx-5 min-vh-100 ">
 
-    <%--  <div class="title container my-5 mx-5">--%>
-    <%--      <h1>Ajouter une nouvelle  Plage : </h1>--%>
-    <%--  </div>--%>
+    <c:if test="${sessionScope.user != null}">
+        <p>Bonjour ${user.username} :) !</p>
+        <a  href="${pageContext.request.contextPath}/logout-registeredUser">Se déconnecter</a>
+    </c:if>
 
     <form method="post" class="mt-5">
         <fieldset>
