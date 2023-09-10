@@ -37,22 +37,23 @@
                 <label for="InputPassword" class="form-label mt-4">Password</label>
                 <input type="password" class="form-control" id="InputPassword" name="password" placeholder="Password" autocomplete="off">
             </div>
-            <c:if test="${error}">
-                <div id="validationServerUsernameFeedback" class="invalid-feedback">
-                    Invalid Credentials
-                </div>
-            </c:if>
+
 
             <button type="submit" class="btn btn-outline-primary my-5">Se connecter</button>
 
-            <div class="text-center">
-                <c:if test = "${errors.size() !=  0}">
-                    <ol class="text-danger text-center">
-                        <c:forEach items="${ errors }" var="error">
-                            <li>${error.message}</li>
-                        </c:forEach>
-                    </ol>
+            <div>
+                <c:if test="${error}">
+                    <div id="validationServerUsernameFeedback" class="text-danger">
+                        Identifiants incorrects
+                    </div>
                 </c:if>
+<%--                <c:if test = "${errors.size() !=  0}">--%>
+<%--                    <ol class="text-danger text-center">--%>
+<%--                        <c:forEach items="${ errors }" var="error">--%>
+<%--                            <li>${error.message}</li>--%>
+<%--                        </c:forEach>--%>
+<%--                    </ol>--%>
+<%--                </c:if>--%>
             </div>
 
 

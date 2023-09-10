@@ -42,7 +42,6 @@ public class LoginServlet extends HttpServlet {
                 // Je met mon user en session
                 request.getSession().setAttribute("user", user);
                 // Je redirige vers la liste d'annonce
-                System.out.println("Redirection vers /list réussie");
                 response.sendRedirect(request.getContextPath() + "/list");
             } else {
                 // Je lui dis que le username ou le mot de passe est incorrecte
