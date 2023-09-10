@@ -89,9 +89,11 @@
                         </div>
                     </c:forEach>
 
+
+                    <%--Card ajout nouvelle annonce--%>
                     <c:if test="${sessionScope.user != null}">
                         <div class="card col-lg-3 col-md-4 col-sm-6 col-xs-12 mx-2 my-2 text-center">
-                            <h3 class="card-header mb-5">${annonce.getTitre()}</h3>
+                            <h3 class="card-header mb-5 text-success">Créer une annonce</h3>
                             <a class="nav-link" href="${pageContext.request.contextPath}/ajout-annonce">
                                 <div class="my-5">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="65" height="65"
